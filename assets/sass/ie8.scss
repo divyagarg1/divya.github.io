@@ -4,15 +4,35 @@
 @import 'libs/skel';
 
 /*
-	Hyperspace by HTML5 UP
+	Spectral by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Type */
+/* Icon */
 
-	body, input, select, textarea {
-		color: _palette(fg-bold);
+	.icon {
+		&.major {
+			border: none;
+
+			&:before {
+				font-size: 3em;
+			}
+		}
+	}
+
+/* Form */
+
+	label {
+		color: _palette(accent7, fg-bold);
+	}
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	select,
+	textarea {
+		border: solid 1px _palette(accent7, border);
 	}
 
 /* Button */
@@ -22,38 +42,74 @@
 	input[type="button"],
 	button,
 	.button {
-		position: relative;
+		border: solid 2px _palette(accent7, border);
 
-		&:after {
+		&.special {
+			border: 0 !important;
+		}
+	}
+
+/* Page Wrapper + Menu */
+
+	#menu {
+		display: none;
+	}
+
+	body.is-menu-visible {
+		#menu {
+			display: block;
+		}
+	}
+
+/* Header */
+
+	#header {
+		nav {
+			> ul {
+				> li {
+					> a {
+						&.menuToggle {
+							&:after {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+/* Banner + Wrapper (style4) */
+
+	#banner,
+	.wrapper.style4 {
+		-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
+
+		&:before {
 			display: none;
 		}
 	}
 
-/* Features */
+/* Banner */
 
-	.features {
-		border: solid 1px;
+	#banner {
+		.more {
+			height: 4em;
+
+			&:after {
+				display: none;
+			}
+		}
 	}
 
-/* Form */
+/* Main */
 
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	input[type="tel"],
-	select,
-	textarea {
-		background: transparent;
-		border: solid 1px;
-	}
+	#main {
+		> header {
+			-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
 
-/* Split */
-
-	.split {
-		&.style1 {
-			> :first-child {
-				padding-right: 2em;
-				width: 70%;
+			&:before {
+				display: none;
 			}
 		}
 	}
