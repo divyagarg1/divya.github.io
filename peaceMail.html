@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Divya Garg</title>
+		<title>PeaceMail</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -30,19 +30,11 @@
 			<div class="wrapper style1 first">
 				<article class="container" id="top">
 					<div class="row">
-						<div class="4u 12u(mobile)">
-							<span class="image fit" style="width:70%"><img class="myPhoto" src="images/myPhoto.jpg" alt="" /></span>
-						</div>
-						<div class="8u 12u(mobile)">
+						<div class="12u 12u(mobile)">
 							<header>
-								<h1>Hi. I'm <strong>Divya Garg</strong>.</h1>
+								<h1>Overview</h1>
 							</header>
-							<p>I am currently a graduate student at University of California, Berkeley, specializing in Product Management and User Experience Research.</p>
-
-<p>I have always been passionate about leveraging technology to design and develop products that solve real customer problems focusing on a rich User Experience. As a software developer and consultant I have had the opportunity to explore the realm of product design and development from different perspectives and have designed products that appeal to both stakeholders and customers.</p>
-
-<p>At UC Berkeley School of Information, I am exploring the intersection of technology, business, and user experience to hone my skills in this disruptive space.</p>
-							<a href="#work" class="button small scrolly">Learn about what I do</a>
+							<p>PeaceMail is a Gmail plugin that helps you protect yourself from sending potentially regrettable emails.  People sometimes send emails that they later regret sending because the email was rude or harsh. These regretful emails are often sent in a hasty, reactionary way after receiving some other piece of news/information. We used few principles of Applied Behavioral Economics to design the Gmail Plugin that can influence sender’s behavior on detection of a potentially regrettable email. </p>
 						</div>
 					</div>
 				</article>
@@ -52,38 +44,16 @@
 			<div class="wrapper style2">
 				<article id="work">
 					<header>
-						<h2>Here's all the stuff I do.</h2>
-						<p>Odio turpis amet sed consequat eget posuere consequat.</p>
-					</header>
-					<div class="container">
-						<div class="row">
-							<div class="4u 12u(mobile)">
-								<section class="box style1">
-									<span class="icon featured fa-comments-o"></span>
-									<h3>Consequat lorem</h3>
-									<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
-								</section>
-							</div>
-							<div class="4u 12u(mobile)">
-								<section class="box style1">
-									<span class="icon featured fa-camera-retro"></span>
-									<h3>Lorem dolor tempus</h3>
-									<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
-								</section>
-							</div>
-							<div class="4u 12u(mobile)">
-								<section class="box style1">
-									<span class="icon featured fa-thumbs-o-up"></span>
-									<h3>Feugiat posuere</h3>
-									<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
-								</section>
-							</div>
-						</div>
-					</div>
-					<footer>
-						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
-						<a href="#portfolio" class="button big scrolly">See some of my recent work</a>
-					</footer>
+						<h2>Research</h2>
+            </hearder>
+						<p>We conducted several qualitative interviews to find whether is this a real problem. Following are some of the quotes taken straight from the interviewees:
+
+“I felt that I was getting the short end of the stick and said stuff to a friend which I wish I hadn’t. I wouldn’t have sent that mail the next morning. Frankly, I wish I had just spoken to him in person.” 
+
+“One time, I sent a mail to my manager to vent my frustration on things being unfair. Next day, I felt so foolish about myself. ” 
+
+“I would often write the email out, in a moment of frustration, but from experience not trust myself to send it. Usually (I would) check it the next day and it would not be something I should send out.” 
+</p>
 				</article>
 			</div>
 
@@ -91,14 +61,26 @@
 			<div class="wrapper style3">
 				<article id="portfolio">
 					<header>
-						<h2>Here’s some stuff I made recently.</h2>
-						<p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat lorem ipsum dolore.</p>
+						<h2>Design</h2>
 					</header>
+          <p>First, a user can tag previously sent emails as regrettable. The user can even highlight the specific words or phrases that were regrettable. Second, the recipients of a user’s email can anonymously add reactions, similar to those in Slack. These reactions can also be tied to specific words or phrases of the email.
+Third, our algorithms will combine the user’s and recipients’ input with other factors, like time of day and formatting, to come up with a model of what makes up a potentially regrettable email for that user. Our plugin then dynamically analyzes future emails.</p>
+<img src="peaceMail/images/mainFlow.png">
+
+<p>It highlights portions of email that might be potentially regrettable.
+The user can choose to edit the email so it does not contain risky content.
+We encourage the user to wait and ‘cool down’ for a bit before sending the email.
+We even suggest activities to help users relax their minds.</p>
+
+<img src="peaceMail/images/process.png">
+<p>Finally, if the user absolutely must send the email as-is, they will have to go through additional confirmation screens in order to send it.</p>
+
+<img src="peaceMail/images/warning.png">
 					<div class="container">
 						<div class="row">
 							<div class="4u 12u(mobile)">
 								<article class="box style2">
-									<a href="#" class="image featured"><img style="width:90%" src="peaceMail/images/logo.png" alt="" /></a>
+									<a href="peaceMail/index.html" class="image featured"><img style="width:90%" src="peaceMail/images/logo.png" alt="" /></a>
 									<h3><a href="#">Know more!</a></h3>
 									<p>Gmail extension for preventing potentially regrettable emails</p>
 								</article>
@@ -146,84 +128,6 @@
 					<footer>
 						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
 						<a href="#contact" class="button big scrolly">Get in touch with me</a>
-					</footer>
-				</article>
-			</div>
-
-		<!-- Contact -->
-			<div class="wrapper style4">
-				<article id="contact" class="container 75%">
-					<header>
-						<h2>Have me make stuff for you.</h2>
-						<p>Ornare nulla proin odio consequat sapien vestibulum ipsum sed lorem.</p>
-					</header>
-					<div>
-						<div class="row">
-							<div class="12u">
-								<form method="post" action="#">
-									<div>
-										<div class="row">
-											<div class="6u 12u(mobile)">
-												<input type="text" name="name" id="name" placeholder="Name" />
-											</div>
-											<div class="6u 12u(mobile)">
-												<input type="text" name="email" id="email" placeholder="Email" />
-											</div>
-										</div>
-										<div class="row">
-											<div class="12u">
-												<input type="text" name="subject" id="subject" placeholder="Subject" />
-											</div>
-										</div>
-										<div class="row">
-											<div class="12u">
-												<textarea name="message" id="message" placeholder="Message"></textarea>
-											</div>
-										</div>
-										<div class="row 200%">
-											<div class="12u">
-												<ul class="actions">
-													<li><input type="submit" value="Send Message" /></li>
-													<li><input type="reset" value="Clear Form" class="alt" /></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</form>
-							</div>
-						</div>
-						<div class="row">
-							<div class="12u">
-								<hr />
-								<h3>Find me on ...</h3>
-								<ul class="social">
-									<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-									<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
-									<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
-									<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-									<!--
-									<li><a href="#" class="icon fa-rss"><span>RSS</span></a></li>
-									<li><a href="#" class="icon fa-instagram"><span>Instagram</span></a></li>
-									<li><a href="#" class="icon fa-foursquare"><span>Foursquare</span></a></li>
-									<li><a href="#" class="icon fa-skype"><span>Skype</span></a></li>
-									<li><a href="#" class="icon fa-soundcloud"><span>Soundcloud</span></a></li>
-									<li><a href="#" class="icon fa-youtube"><span>YouTube</span></a></li>
-									<li><a href="#" class="icon fa-blogger"><span>Blogger</span></a></li>
-									<li><a href="#" class="icon fa-flickr"><span>Flickr</span></a></li>
-									<li><a href="#" class="icon fa-vimeo"><span>Vimeo</span></a></li>
-									-->
-								</ul>
-								<hr />
-							</div>
-						</div>
-					</div>
-					<footer>
-						<ul id="copyright">
-							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
 					</footer>
 				</article>
 			</div>
