@@ -49,8 +49,8 @@
             		<div class="container">
 						<div class="row">
 							<div class="12u 12u(mobile)">
-								<p>We did some reasearch and literature review on the current trend  and the current solutions for preventing online harassment. A 2014 study by Pew research center showed that 40% of internet users have personally experienced online harassment, from the mild to the severe; 73% have witnessed it occur to others.</p>
-								Current options of dealing with trolls online are threefold. One, using architectural elements such as blocking the user or flagging the comment that is prevalent on many social platforms. Two, by using Moderation, such as by using algorithms to identify vandals on Wikipedia.  Three, using the social conventions on the social platforms to encourage or discourage users.          
+								<p>We did some reasearch and literature review on the current trend  and the current solutions for preventing online harassment. A 2014 study by Pew research center showed that 40% of internet users have personally experienced online harassment, from the mild to the severe; 73% have witnessed it occur to others.
+								Current options of dealing with trolls online are threefold. One, using architectural elements such as blocking the user or flagging the comment that is prevalent on many social platforms. Two, by using Moderation, such as by using algorithms to identify vandals on Wikipedia.  Three, using the social conventions on the social platforms to encourage or discourage users. </p>         
                 <p>All the above solutions are reactive in nature and the damage is already done to the victim. Our approach is to prevent harassment in the first place by detecting insults when a user is posting or commenting and providing them a warning notification that might change the mind of the user. If the user continued to post insulting comments, it would still be flagged for review and prioritized, thereby ensuring quicker action by moderators.</p>
 							</div>
 						</div>
@@ -72,7 +72,7 @@
 In the quest of finding a good classifier model, we experiment with Naïve Bayes and Logistic regression, and focus our efforts into finding adequate “featurizations” of our data. Fatures that we used for Kaggle data set were Using unigrams
 Using unigrams, bi-grams and tri-grams and N-grams along with additional features like the number of bad words (google list), ratio of words in the ‘bad list’, ratio of words in ALL CAPS</p>
 								<p>Results were:</p>							
-			<img style='width:100%;' border="0" alt="Null" src="stopHarass/images/results.png">
+			<img style='width:50%;' border="0" alt="Null" src="stopHarass/images/results1.png">
 
 <p>Twitter data was obtained through their API to access a set of 600 public stream of Tweets. Since this randomly obtained stream of data did not contain a sufficient amount of insults, it was complemented with 100 tweets obtained from an account dedicated to stream insults . Each Twitter comment was manually labeled (insult/neutral) by 3 Amazon Turkers. Twitter data was manually labeled (insult/neutral) and reviewed to delete non-language (links, pictures), pornographic or non-english comments and randomly combined to obtain a proportion of 30-70% of insults/neutral comments. The final dataset contained 200 tweets with 60 (30%) of them labeled as insults. Using the same features, we were able to get 82% accuracy in the results.</p>
 								<p><b>Future Wok:</b></p>
