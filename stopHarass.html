@@ -68,20 +68,16 @@
 						<div class="row">
 							<div class="12u 12u(mobile)">
 								
-          <p>First, a user can tag previously sent emails as regrettable. The user can even highlight the specific words or phrases that were regrettable. Second, the recipients of a user’s email can anonymously add reactions, similar to those in Slack. These reactions can also be tied to specific words or phrases of the email.
-Third, our algorithms will combine the user’s and recipients’ input with other factors, like time of day and formatting, to come up with a model of what makes up a potentially regrettable email for that user. Our plugin then dynamically analyzes future emails.</p>
-<img style='width:100%;' border="0" alt="Null" src="peaceMail/images/mainFlow.png">
+          <p>All of our analysis is based on two sources of data for social media comments: A dataset provided by Kaggle  and a public stream of data obtained from the Twitter API. The Kaggle dataset  correspond to 3,947 comments made in social media sites (unicode-escaped strings, all written in english language), each with a label of “insulting comment” (integer value of 1) or “neutral comment” (value of 0).
+In the quest of finding a good classifier model, we experiment with Naïve Bayes and Logistic regression, and focus our efforts into finding adequate “featurizations” of our data. Fatures that we used for Kaggle data set were Using unigrams
+Using unigrams, bi-grams and tri-grams and N-grams along with additional features like the number of bad words (google list), ratio of words in the ‘bad list’, ratio of words in ALL CAPS</p>
+								<p>Results were:</p>							
+			<img style='width:100%;' border="0" alt="Null" src="stopHarass/images/result.png">
 
-<p>It highlights portions of email that might be potentially regrettable.
-The user can choose to edit the email so it does not contain risky content.
-We encourage the user to wait and ‘cool down’ for a bit before sending the email.
-We even suggest activities to help users relax their minds.</p>
-
-<img style='width:100%;' border="0" alt="Null" src="peaceMail/images/process.png">
-<p>Finally, if the user absolutely must send the email as-is, they will have to go through additional confirmation screens in order to send it.</p>
-
-<img style='width:100%;' border="0" alt="Null" src="peaceMail/images/warning.png">
-						</div>
+<p>Twitter data was obtained through their API to access a set of 600 public stream of Tweets. Since this randomly obtained stream of data did not contain a sufficient amount of insults, it was complemented with 100 tweets obtained from an account dedicated to stream insults . Each Twitter comment was manually labeled (insult/neutral) by 3 Amazon Turkers. Twitter data was manually labeled (insult/neutral) and reviewed to delete non-language (links, pictures), pornographic or non-english comments and randomly combined to obtain a proportion of 30-70% of insults/neutral comments. The final dataset contained 200 tweets with 60 (30%) of them labeled as insults. Using the same features, we were able to get 82% accuracy in the results.</p>
+								<p>Future Wok:</p>
+<p>We need to improve accuracy by including features like parts of speech (context), collocation etc. so that the subjectivity of insults can be understood. Also, we need to productize it into our vision of a mechanism for preventing online harassment. Our research paper can be found <a href="https://drive.google.com/drive/folders/0B94bUIQGEkfFQ29POE9Ya3gtbnc">here!</a></p>
+							</div>
 					</div>
 				</div>
 					
